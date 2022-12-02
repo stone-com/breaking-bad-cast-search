@@ -1,12 +1,14 @@
-import { getSuggestedQuery } from '@testing-library/react';
+import { useContext } from 'react';
+import AppContext from '../../Context';
 import { useState } from 'react';
 
-const Search = ({ getQuery }) => {
+const Search = () => {
+  const { queryFunction } = useContext(AppContext);
   const [text, setText] = useState('');
 
   const onChange = (q) => {
     setText(q);
-    getQuery(q);
+    queryFunction(q);
   };
   return (
     <section className='search'>

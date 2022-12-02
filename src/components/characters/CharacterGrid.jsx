@@ -1,7 +1,11 @@
 import CharacterItem from './CharacterItem';
 import Spinner from '../ui/Spinner';
+import { useContext } from 'react';
+import AppContext from '../../Context';
 
-const CharacterGrid = ({ items, isLoading }) => {
+const CharacterGrid = () => {
+
+  const {items, isLoading} = useContext(AppContext)
   return isLoading ? (
     <Spinner />
   ) : (
