@@ -6,11 +6,7 @@
 
 html,
 body {
-  background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 96, 45, 1) 100%
-  );
+  background: #000 url('img/bg.jpg') no-repeat center center/cover;
   height: 100vh;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
@@ -118,6 +114,7 @@ input[type='text'] {
   color: white;
   padding: 20px;
   transform: rotateY(180deg);
+  overflow-x: scroll;
 }
 
 .card li {
