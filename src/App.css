@@ -117,6 +117,9 @@ input[type='text'] {
   overflow-x: scroll;
 }
 
+.card-back h1 {
+  text-align: center;
+}
 .card li {
   list-style: none;
   padding-bottom: 10px;
